@@ -1,0 +1,11 @@
+argent(jean).
+argent(alain).
+temps(juillet).
+vacance(alain):-temps(juillet).
+vacance(jean):-temps(aout).
+soleil:-temps(aout).
+reussit_travail(jean).
+reussit_travail(alain).
+reussit_famille(alain).
+bonne_humeur(X):-argent(X),vacance(X),soleil.
+bonne_humeur(X):-reussit_travail(X),reussit_famille(X).
